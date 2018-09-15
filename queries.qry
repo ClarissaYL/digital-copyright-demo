@@ -1,0 +1,6 @@
+query selectResourceByOwner{
+    description: "Select all Resources with the specific owner"
+    statement:
+        SELECT org.demo.network.Resource
+            WHERE (owner == _$ownerParam)
+}
